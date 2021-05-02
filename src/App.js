@@ -1,9 +1,14 @@
+import Header from "./components/Header/Header";
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom"; 
 
 
 function App() {
   return <div className="App">
-    <h1>hi</h1>
-  </div>;
+    <BrowserRouter>
+    <Header/>
+    </BrowserRouter>
+  </div>
 }
 
 export default App;

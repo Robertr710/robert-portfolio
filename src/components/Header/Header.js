@@ -1,8 +1,8 @@
 import React from "react";
 import AppBar from "@material-ui/core/AppBar";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
+// import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/styles";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
@@ -13,7 +13,21 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Header = (props) => {
-    return;
+    const classes = useStyles();
+    return (
+        
+        <AppBar position = "fixed" >
+            <Toolbar>
+                <Tabs>
+                    <Tab component={Link} to="/about" label="About Me"/>
+                    <Tab component={Link} to="/projects"label="Projects"/>
+                    <Tab component={Link} to="awards"label="Awards"/>
+                    <Tab component={Link} to="/skills" label="Skills"/>
+                </Tabs>
+            </Toolbar>
+        </AppBar>
+       
+    )
 }
 export default Header;
 
