@@ -10,13 +10,15 @@ import { Link } from "react-router-dom";
 
 
 const useStyles = makeStyles((theme) => ({
-
+toolbarMargin: {
+    marginTop: "4rem",
+}
 }));
 
 const Header = (props) => {
     const classes = useStyles();
     return (
-        
+        <React.Fragment>
         <AppBar position = "fixed" >
             <Toolbar>
                 <Tabs>
@@ -24,9 +26,12 @@ const Header = (props) => {
                     <Tab component={Link} to="/projects"label="Projects"/>
                     <Tab component={Link} to="awards"label="Awards"/>
                     <Tab component={Link} to="/skills" label="Skills"/>
+                    <Tab component={Link} to="/skills" label="Skills"/>
                 </Tabs>
             </Toolbar>
         </AppBar>
+        <div className={classes.toolbarMargin}></div>
+        </React.Fragment>
        
     )
 }
