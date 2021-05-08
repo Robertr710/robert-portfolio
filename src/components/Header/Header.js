@@ -8,32 +8,29 @@ import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import { Link } from "react-router-dom";
 
-
 const useStyles = makeStyles((theme) => ({
-toolbarMargin: {
+  toolbarMargin: {
     marginTop: "4rem",
-}
+  },
 }));
 
 const Header = (props) => {
-    const classes = useStyles();
-    return (
-        <React.Fragment>
-        <AppBar position = "fixed" >
-            <Toolbar>
-                <Tabs>
-                    <Tab component={Link} to="/about" label="About Me"/>
-                    <Tab component={Link} to="/projects"label="Projects"/>
-                    <Tab component={Link} to="awards"label="Awards"/>
-                    <Tab component={Link} to="/skills" label="Skills"/>
-                    
-                </Tabs>
-            </Toolbar>
-        </AppBar>
-        <div className={classes.toolbarMargin}></div>
-        </React.Fragment>
-       
-    )
-}
+  const classes = useStyles();
+  return (
+    <React.Fragment>
+      <AppBar position="fixed">
+        <Toolbar>
+          <Tabs>
+            <Tab component={Link} to="/about" label="About Me" />
+            <Tab component={Link} to="/projects" label="Projects" />
+            <Tab component={Link} to="awards" label="Awards" />
+            <Tab component={Link} to="/skills" label="Skills" />
+            <Tab component={Link} to="/languages" label="Languages" />
+          </Tabs>
+        </Toolbar>
+      </AppBar>
+      <div className={classes.toolbarMargin}></div>
+    </React.Fragment>
+  );
+};
 export default Header;
-
