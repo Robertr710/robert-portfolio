@@ -25,7 +25,7 @@ const Header = (props) => {
             <Tab component={Link} to="/projects" label="Projects" />
             <Tab component={Link} to="awards" label="Awards" />
             <Tab component={Link} to="/skills" label="Skills" />
-            <Tab component={Link} to="/languages" label="Languages" />
+           
           </Tabs>
         </Toolbar>
       </AppBar>
