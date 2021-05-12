@@ -30,6 +30,10 @@ const AboutMe = () => {
       <div>Test</div>
       <div>Test</div>
       <div>Test</div>
+      <div>Test</div>
+      <div>Test</div>
+      <div>Test</div>
+      <div>Test</div>
     </div>
   );
 };
